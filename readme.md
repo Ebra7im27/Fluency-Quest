@@ -26,7 +26,7 @@ This project is a Course Management System that allows users to register, log in
 - Once logged in, you can manage your courses and favorites.
 
 ## License
-This project is open-source and is licensed under the MIT License. See the [Project].
+This project is open-source and is licensed under the MIT License. See the [https://ebra7im27.github.io/Fluency-Quest/].
 
 ## Contact
 For any inquiries, please contact me at [ebrahimmohamed2325@gmail.com].
