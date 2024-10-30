@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata and Page Configuration -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font: Linking Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <!-- Link to AOS CSS file -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Page Title and Icon -->
+    <title>Fluency Quest</title>
+    <link rel="icon" href="images/LOGO.png" width="40px" height="40px">
+</head>
+
+<body>
+    <!-- Header Section with Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <!-- Logo and Home Link -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/LOGO.png" alt="logo-website" width="60px" height="60px">
+                </a>
+                <!-- Mobile Menu Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="links">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold font" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold font" aria-current="page" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold font" href="register.html">Register</a>
+                        </li>
+                    </ul>
+                    <!-- User Info and Cart Section -->
+                    <ul class="navbar-nav ms-auto" id="user_info">
+                        <!-- User Display -->
+                        <li class="mt-2">
+                            <a href="#" class="text-decoration-none text-black fw-bold font" id="user"></a>
+                            <a href="#" class="text-decoration-none text-black fw-bold font" id="user2"></a>
+                        </li>
+                        <!-- Shopping Cart Icon with Badge -->
+                        <li class="shopping_cart nav-item">
+                            <i class="fas fa-shopping-cart mt-2 cartIcon"></i>
+                            <span class="badge"></span> <!-- Badge for Cart Quantity -->
+
+                            <!-- Dropdown for Cart Items -->
+                            <div class="dropdown-menu items_course">
+                                <div class="m-lg-4"></div>
+                                <a href="itemscourse.html">View All Courses</a>
+                            </div>
+                        </li>
+                        <!-- Logout Link -->
+                        <li class="nav-item">
+                            <a href="login.html" id="logout" class="nav-link fw-bold font">Log Out</a>
+                        </li>
+                    </ul>
+                </div><!-- /End of Navbar Links and User Info-->
+            </div><!-- /End of Navbar Container -->
+        </nav><!-- /End of Navigation Bar -->
+    </header><!-- /End of Header Section -->
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Jumbotron for Featured Content -->
+        <div class="jumbotron jumbotron-fluid bg-dark p-4">
+            <div class="container">
+                <h1 class="font display-4 text-light text-center"><span class="fw-bolder">Fluency Quest:</span> Unlock
+                    Your Potential</h1>
+                <p class="font para-adidas lead text-light text-center">Explore a variety of courses designed to elevate
+                    your skills and expand your knowledge. Choose what suits you best and embark on your journey to
+                    success with confidence and clarity.</p>
+            </div><!-- /End of Jumbotron Container-->
+        </div><!-- /End of Jumbotron Section -->
+    </main><!-- /End of Main Content -->
+
+    <!-- Advanced Search Section -->
+    <section>
+        <div class="container mt-3">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="input-group gap-3">
+                        <!-- Category Dropdown for Search Options -->
+                        <select class="form-select font" id="categorySelect" onchange="getSearchMood(this.value)">
+                            <option selected value="name" id="searchName">Search By Name</option>
+                            <option value="demand" id="searchDemand">Search By Demand</option>
+                        </select>
+                        <!-- Search Input Field -->
+                        <input onkeyup="searchCourses(this.value)" type="search" class="form-control font"
+                            placeholder="Search By Name">
+                    </div><!-- /End of Search Input Group -->
+                </div>
+            </div>
+        </div>
+    </section><!-- /End of Advanced Search Section -->
+
+    <!-- Divider Line -->
+    <hr>
+
+    <!-- Courses Section -->
+    <section>
+        <div class="container me-auto">
+            <div class="Courses">
+                <!-- Dynamic Courses Content Will be Inserted Here -->
+            </div><!-- /End of Courses Container-->
+        </div><!-- /End of Courses Section Container-->
+    </section><!-- /End of Courses Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer_Course">
+        <div class="container">
+            <div class="footer-container row flex-column flex-sm-row">
+                <div class="col-12 mt-5 mb-5">
+                    <hr class="footer-divider text-light">
+                </div>
+                <div class="footer-item col collapsible-xs">
+                    <div class="content-asset">
+                        <h2><a class="title font fs-3 text-light add-footer">EXPLORE OUR COURSES</a></h2>
+                        <ul class="menu-footer content">
+                            <li><a href="#" class="link-footer text-light">Language Courses</a></li>
+                            <li><a href="#" class="link-footer text-light">Business Courses</a></li>
+                            <li><a href="#" class="link-footer text-light">Creative Writing</a></li>
+                        </ul><!-- /End of menu-footer -->
+                    </div><!-- /End of content-asse -->
+                </div><!-- /End of footer-item -->
+                <div class="footer-item col collapsible-xs">
+                    <div class="content-asset">
+                        <h2><a class="title font fs-3 text-light add-footer">OUR SERVICES</a></h2>
+                        <ul class="menu-footer content">
+                            <li><a href="#" class="link-footer text-light">One-on-One Tutoring</a></li>
+                            <li><a href="#" class="link-footer text-light">Group Classes</a></li>
+                            <li><a href="#" class="link-footer text-light">Online Resources</a></li>
+                        </ul><!-- /End of menu-footer -->
+                    </div><!-- /End of content-asse -->
+                </div><!-- /End of footer-item -->
+                <div class="footer-item col collapsible-xs">
+                    <div class="content-asset">
+                        <h2><a class="title font fs-3 text-light add-footer">CONTACT US</a></h2>
+                        <ul class="menu-footer content">
+                            <li><a href="#" class="link-footer text-light">Email Us</a></li>
+                            <li><a href="#" class="link-footer text-light">FAQs</a></li>
+                            <li><a href="#" class="link-footer text-light">Support</a></li>
+                        </ul><!-- /End of menu-footer -->
+                    </div><!-- /End of content-asse -->
+                </div><!-- /End of footer-item -->
+                <div class="footer-item col collapsible-xs">
+                    <div class="content-asset">
+                        <h2><a class="title font text-light fs-3 add-footer">FOLLOW US</a></h2>
+                        <ul class="menu-footer content">
+                            <li><a href="#"><i class="fab fa-facebook text-light fs-4"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram text-light fs-4"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube text-light fs-4"></i></a></li>
+                        </ul><!-- /End of menu-footer -->
+                    </div><!-- /End of content-asset -->
+                </div><!-- /End of footer-item -->
+            </div>
+        </div><!-- /End of Footer Section Container -->
+    </footer><!-- /End of Footer Section -->
+
+    <!-- Link to AOS JavaScript file, preferably placed before </body> for better loading performance -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS library for scroll animations
+        AOS.init()
+    </script>
+
+    <!-- External JavaScript Files -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/user.js"></script>
+</body>
+
+</html>

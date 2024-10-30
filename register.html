@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Linking external CSS files for styling the page -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <title>Registration | Fluency Quest</title>
+    <link rel="icon" href="images/LOGO.png" width="40px" height="40px">
+</head>
+
+<body>
+    <section class="signup">
+        <div class="form-container">
+            <h2 class="font mb-4">Registration</h2>
+            <form>
+                <div class="mb-3 d-flex gap-1">
+                    <input type="text" class="form-control font" id="register-firstname" placeholder="First Name">
+                    <input type="text" class="form-control font" id="register-lastname" placeholder="Last Name">
+                </div>
+                <div class="mb-3">
+                    <input type="email" placeholder="Enter email" id="register-email" class="form-control font">
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control font" id="register-password" placeholder="Enter Password">
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">&nbsp;I accepted all terms and conditions</label>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary font" type="button" id="register-button">Signup</button>
+                </div>
+
+            </form>
+            <div class="login-signup mt-2">
+                <span class="text font">Already a member?
+                    <a href="login.html" class="text login-link font text-decoration-none"><span class="span1">Login Now</span></a>
+                </span>
+            </div>
+        </div>
+    </section>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>

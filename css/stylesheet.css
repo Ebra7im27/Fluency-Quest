@@ -1,0 +1,178 @@
+/* Start of Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* End of Global Styles......................................................................................... */
+
+/* Start of Font Styles */
+.font {
+    font-family: "Exo 2", serif;
+}
+
+/* End of Font Styles......................................................................................... */
+
+/* Start of User Info Styles */
+nav ul#user_info li i {
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav ul#user_info li {
+    margin: 0px 10px;
+    position: relative;
+}
+
+nav ul#user_info li .badge {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    padding-left: 2px;
+    padding-top: 2px;
+    color: #fff;
+    display: none;
+    border-radius: 50%;
+    bottom: 21px;
+    left: 17px;
+    font-size: 13px;
+}
+
+.navbar-collapse ul#user_info {
+    display: none;
+}
+
+/* End of User Info Styles......................................................................................... */
+
+/* Start of Authentication Styles */
+.signup,
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4070f4;
+}
+
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+}
+
+.signup .form-container .login-signup .span1:hover,
+.login .form-container .login-signup .span1:hover {
+    text-decoration: underline;
+}
+
+/* End of Authentication Styles......................................................................................... */
+
+/* Start of Swiper Component Styles */
+.swiper-container {
+    width: 80%;
+    min-height: 400px;
+    /* Set minimum height to avoid large height */
+    overflow: hidden;
+    /* Hide overflow content */
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+    /* Make height auto */
+}
+
+.swiper-slide {
+    text-align: left;
+    /* Align text to the left */
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    /* Display items in column */
+    justify-content: center;
+    /* Center content in slide */
+    align-items: flex-start;
+    /* Align items to the left */
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* Make image height auto */
+    object-fit: cover;
+}
+
+/* End of Swiper Component Styles......................................................................................... */
+
+/* Start of Favorite Color Styles */
+.colorfav {
+    cursor: pointer;
+}
+
+/* End of Favorite Color Styles......................................................................................... */
+
+/* Start of Total Price Styles */
+.totalprice {
+    display: none;
+}
+
+/* End of Total Price Styles......................................................................................... */
+
+/* Start of Course Items Styles */
+.items_course {
+    position: absolute;
+    width: 210px;
+    transform: translate(-40px, 0);
+    background-color: #eaeaea;
+    top: 56px;
+    padding: 10px;
+    border: 2px solid darkgreen;
+    margin: 10px 0px 0px -100px;
+    display: none;
+}
+
+.items_course a {
+    display: block;
+    color: #000;
+    margin: auto;
+    padding: 0;
+    background-color: darkgreen;
+    width: 135px;
+    border-radius: 25px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* End of Course Items Styles......................................................................................... */
+
+/* Start of Footer Styles */
+
+.menu-footer {
+    list-style: none;
+    line-height: 2;
+}
+
+.link-footer:hover {
+    text-decoration: underline;
+}
+
+.footer_Course {
+    background-color: black;
+}
+
+.link-footer,
+.add-footer,
+.link-card {
+    text-decoration: none;
+}
+
+/* End of Footer Styles......................................................................................... */
